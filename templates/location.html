@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="location-layout">
+  <div class="location-main">
+    <div class="location-copy">
+      <p class="eyebrow">Office in Dalton, Georgia</p>
+      <h1>Local counsel rooted in Northwest Georgia.</h1>
+      <p class="lead">Serving the legal needs of Whitfield and Murray County families.</p>
+    </div>
+    <div class="location-visit">
+      <article class="page-content location-info-card">
+        <p class="location-address-line">
+          <strong>Office Address</strong>
+          <span class="location-address-separator" aria-hidden="true">|</span>
+          <span class="location-address-links">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=206+W.+Hawthorne+Street+Dalton+GA+30720" target="_blank" rel="noreferrer">{{ config.extra.address_lines[0] }}, {{ config.extra.address_lines[1] }}</a>
+          </span>
+        </p>
+      </article>
+      <a class="map-card map-link-card" href="https://www.google.com/maps/dir/?api=1&destination=206+W.+Hawthorne+Street+Dalton+GA+30720" target="_blank" rel="noreferrer" aria-label="Open directions in Google Maps">
+        <iframe
+          title="Map to Meghan Pasqua Attorney at Law"
+          src="https://www.google.com/maps?q=206+W.+Hawthorne+Street+Dalton+GA+30720&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </a>
+    </div>
+  </div>
+  <div class="location-sidebar">
+    <div class="location-gallery">
+      <figure class="gallery-card location-card-split">
+        <img src="/images/courthouse_m.jpg" alt="Historic courthouse building in Dalton">
+      </figure>
+      <figure class="gallery-card location-card-split">
+        <img src="/images/courthouse_w.jpg" alt="Exterior courthouse detail in Dalton">
+      </figure>
+    </div>
+  </div>
+</section>
+{% endblock content %}

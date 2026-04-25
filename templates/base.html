@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#105239">
+    <title>{% if page and page.title %}{{ page.title }} | {{ config.title }}{% elif section and section.title %}{{ section.title }} | {{ config.title }}{% else %}{{ config.title }}{% endif %}</title>
+    <meta name="description" content="{% if page and page.description and page.description != '' %}{{ page.description }}{% elif section and section.description %}{{ section.description }}{% else %}{{ config.description }}{% endif %}">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="/main.css">
+    <script>
+      (() => {
+        const saved = localStorage.getItem("theme");
+        const theme = saved === "dark" ? "dark" : "light";
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="site-column">
+        <header class="site-header">
+          <div class="floating-header">
+            <div class="header-identity">
+              <a class="header-brand" href="/" aria-label="{{ config.title }}">
+                <img class="logo-light" src="/images/header-logo-law14.png" alt="Meghan Pasqua Attorney at Law logo">
+                <img class="logo-dark" src="/images/header-logo-law14.png" alt="Meghan Pasqua Attorney at Law logo">
+              </a>
+              <div class="header-contact">
+                <a href="{{ config.extra.phone_href }}">{{ config.extra.phone_display }}</a>
+                <span class="header-address-full">{{ config.extra.address_lines[0] }}, {{ config.extra.address_lines[1] }}</span>
+                <span class="header-address-compact">206 W. Hawthorne St, Dalton</span>
+              </div>
+            </div>
+            <nav class="site-nav" aria-label="Primary">
+              <a href="/" aria-label="Home">
+                <span class="nav-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M4 10.5 12 4l8 6.5"></path>
+                    <path d="M6.5 9.5V20h11V9.5"></path>
+                  </svg>
+                </span>
+                <span class="nav-label">Home</span>
+              </a>
+              <a href="/about/" aria-label="About">
+                <span class="nav-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <circle cx="12" cy="7" r="3"></circle>
+                    <path d="M6.5 19c.8-3.2 3-4.8 5.5-4.8S16.7 15.8 17.5 19"></path>
+                  </svg>
+                </span>
+                <span class="nav-label">About</span>
+              </a>
+              <a href="/location/" aria-label="Location">
+                <span class="nav-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M12 21s6-5.7 6-11a6 6 0 1 0-12 0c0 5.3 6 11 6 11Z"></path>
+                    <circle cx="12" cy="10" r="2.5"></circle>
+                  </svg>
+                </span>
+                <span class="nav-label">Location</span>
+              </a>
+              <a href="/contact/" aria-label="Contact">
+                <span class="nav-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5Z"></path>
+                    <path d="m5.5 7 6.5 5 6.5-5"></path>
+                  </svg>
+                </span>
+                <span class="nav-label">Contact</span>
+              </a>
+              <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+                <span class="nav-icon theme-icon theme-icon-sun" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2.5v2.5"></path>
+                    <path d="M12 19v2.5"></path>
+                    <path d="m4.9 4.9 1.8 1.8"></path>
+                    <path d="m17.3 17.3 1.8 1.8"></path>
+                    <path d="M2.5 12H5"></path>
+                    <path d="M19 12h2.5"></path>
+                    <path d="m4.9 19.1 1.8-1.8"></path>
+                    <path d="m17.3 6.7 1.8-1.8"></path>
+                  </svg>
+                </span>
+                <span class="nav-icon theme-icon theme-icon-moon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M20 14.2A7.8 7.8 0 0 1 9.8 4a8.8 8.8 0 1 0 10.3 10.2Z"></path>
+                  </svg>
+                </span>
+              </button>
+            </nav>
+          </div>
+        </header>
+
+        <main>
+          {% block content %}{% endblock content %}
+        </main>
+      </div>
+    </div>
+    <script defer src="/theme.js"></script>
+  </body>
+</html>

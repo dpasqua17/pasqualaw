@@ -1,0 +1,24 @@
+base_url = "http://192.168.4.68:8000"
+title = "Meghan Pasqua | Attorney at Law"
+description = "A Dalton, Georgia law office providing clear, steady representation in family law, probate, civil litigation, and mediation matters."
+default_language = "en"
+compile_sass = true
+build_search_index = false
+minify_html = false
+generate_feeds = false
+
+[markdown]
+smart_punctuation = true
+
+[extra]
+firm_name = "Meghan Pasqua"
+firm_tagline = "Attorney at Law"
+city = "Dalton, Georgia"
+phone_display = "(706) 250-1275"
+phone_href = "tel:+17062501275"
+email = "meghan@pasqualaw.com"
+email_href = "mailto:meghan@pasqualaw.com"
+staff_email = "grecia@pasqualaw.com"
+staff_email_href = "mailto:grecia@pasqualaw.com"
+address_lines = ["206 W. Hawthorne Street", "Dalton, Georgia 30720"]
+linkedin = "https://www.linkedin.com/in/meghan-pasqua-867402194?trk=blended-typeahead"

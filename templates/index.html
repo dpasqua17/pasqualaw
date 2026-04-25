@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-copy">
+    <h1>Personalized legal counsel with local insight and passionate advocacy.</h1>
+    <p class="lead" style="font-size: 16.2px;">Attorney Meghan Pasqua provides practical guidance for families navigating divorce, child custody, legitimation, adoption, and estate planning matters, with consistent and transparent communication from the start.</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="/about/">Meet the team</a>
+      <a class="button button-secondary" href="{{ config.extra.phone_href }}">Call {{ config.extra.phone_display }}</a>
+    </div>
+    <article class="panel statement-card hero-statement">
+      <h3 style="font-weight: normal; line-height: 1.6;">
+        "Practicing family law means helping people navigate some of the most difficult and transformative moments of their lives. When my clients place their trust in me, I treat that responsibility with the care and respect it deserves."
+        <br>
+        <strong style="font-size: 1.2em; display: block; text-align: right;"> - Meghan Pasqua</strong>
+      </h3>
+    </article>
+  </div>
+  <div class="hero-media">
+    <figure class="hero-panel hero-panel-tall">
+      <img src="/images/meghan-courtroom.jpg" alt="Attorney Meghan Pasqua in a courtroom in Dalton, Georgia">
+    </figure>
+  </div>
+</section>
+
+<section class="divider-photo">
+  <figure class="hero-panel divider-panel">
+    <img src="/images/dalton-park.jpg" alt="A park path in Dalton, Georgia">
+  </figure>
+</section>
+
+<section class="practice-section">
+  <div class="section-heading">
+    <p class="eyebrow">Practice focus</p>
+    <h2>Services to help families navigate legal matters.</h2>
+  </div>
+  <div class="practice-grid">
+    <article class="practice-card">
+      <h3>Divorce</h3>
+      <p>Advocacy through separation, filing, negotiation, and resolution.</p>
+    </article>
+    <article class="practice-card">
+      <h3>Child custody</h3>
+      <p>Strategic representation focused on practical outcomes prioritizing children's well-being.</p>
+    </article>
+    <article class="practice-card">
+      <h3>Legitimation</h3>
+      <p>Support for establishing parental rights and protecting parents' legal standing.</p>
+    </article>
+    <article class="practice-card">
+      <h3>Adoptions</h3>
+      <p>Legal assistance for families through every step of the adoption process.</p>
+    </article>
+    <article class="practice-card">
+      <h3>Estate planning</h3>
+      <p>Thoughtful counsel to help families prepare, protect, and plan for the future.</p>
+    </article>
+  </div>
+</section>
+
+{% endblock content %}
