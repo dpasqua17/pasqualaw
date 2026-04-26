@@ -303,15 +303,15 @@ html[data-theme="dark"] .logo-dark {
   background: transparent;
 }
 
-.theme-icon-moon {
-  display: none;
-}
-
-html[data-theme="dark"] .theme-icon-sun {
+.theme-icon-sun {
   display: none;
 }
 
 html[data-theme="dark"] .theme-icon-moon {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-icon-sun {
   display: inline-flex;
 }
 
