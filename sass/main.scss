@@ -1018,10 +1018,6 @@ html[data-theme="dark"] .button-secondary {
 }
 
 @media (max-width: 980px) {
-  :root {
-    --header-offset: 4.3rem;
-  }
-
   .floating-header {
     gap: 0.38rem;
     padding: 0.22rem 0.46rem;
@@ -1197,10 +1193,6 @@ html[data-theme="dark"] .button-secondary {
 }
 
 @media (max-width: 720px) {
-  :root {
-    --header-offset: 3.95rem;
-  }
-
   html {
     font-size: 15px;
   }
