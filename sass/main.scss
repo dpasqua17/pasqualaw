@@ -1293,6 +1293,12 @@ html[data-theme="dark"] .button-secondary {
   }
 }
 
+@media (max-width: 540px) {
+  .header-contact {
+    display: none;
+  }
+}
+
 @media print {
   body {
     background: #fff;
