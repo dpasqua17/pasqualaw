@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#105239">
     <title>{% if page and page.title %}{{ page.title }} | {{ config.title }}{% elif section and section.title %}{{ section.title }} | {{ config.title }}{% else %}{{ config.title }}{% endif %}</title>
     <meta name="description" content="{% if page and page.description and page.description != '' %}{{ page.description }}{% elif section and section.description %}{{ section.description }}{% else %}{{ config.description }}{% endif %}">
+    <link rel="canonical" href="{% if current_url %}{{ current_url }}{% else %}{{ config.base_url }}{% endif %}">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
