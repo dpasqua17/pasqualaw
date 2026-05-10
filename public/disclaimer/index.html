@@ -12,6 +12,89 @@
     <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
     <link rel="stylesheet" href="/main.css">
+    <style>
+      .site-footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0.42rem;
+        z-index: 30;
+        padding: 0 0.75rem;
+        pointer-events: none;
+      }
+
+      .site-footer .floating-footer {
+        width: min(calc(100% - 1.5rem), var(--max-width, 1120px));
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+        min-width: 0;
+        padding: 0.44rem 0.68rem;
+        border-radius: 1rem;
+        border: 1px solid var(--header-border, rgba(255, 255, 255, 0.16));
+        background: var(--header-bg, #105239);
+        color: var(--header-text, rgba(255, 255, 255, 0.94));
+        box-shadow: var(--shadow-soft, 0 10px 30px rgba(16, 82, 57, 0.06));
+        backdrop-filter: blur(14px);
+        pointer-events: auto;
+        white-space: nowrap;
+      }
+
+      .site-footer .floating-footer p {
+        flex: 1 1 auto;
+        min-width: 0;
+        margin: 0;
+        overflow: hidden;
+        color: inherit;
+        font-size: clamp(0.72rem, 0.58rem + 0.42vw, 0.86rem);
+        line-height: 1;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .site-footer .floating-footer a {
+        flex: 0 0 auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 1.82rem;
+        padding: 0.3rem 0.5rem;
+        border-radius: 999px;
+        border: 1px solid var(--header-chip-border, rgba(255, 255, 255, 0.18));
+        background: var(--header-chip-bg, rgba(255, 255, 255, 0.08));
+        color: var(--header-icon, #ffffff);
+        font-size: clamp(0.72rem, 0.58rem + 0.42vw, 0.86rem);
+        line-height: 1;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .site-footer .floating-footer a:hover,
+      .site-footer .floating-footer a:focus-visible {
+        color: var(--header-icon, #ffffff);
+        background: var(--header-chip-hover, rgba(255, 255, 255, 0.15));
+      }
+
+      @media (max-width: 720px) {
+        .site-footer {
+          bottom: 0.24rem;
+          padding: 0 0.4rem;
+        }
+
+        .site-footer .floating-footer {
+          width: min(calc(100% - 0.8rem), var(--max-width, 1120px));
+          gap: 0.22rem;
+          padding: 0.34rem 0.36rem;
+          border-radius: 0.92rem;
+        }
+
+        .site-footer .floating-footer a {
+          min-height: 1.68rem;
+          padding: 0.26rem 0.34rem;
+        }
+      }
+    </style>
     <script>
       (() => {
         const saved = localStorage.getItem("theme");
