@@ -39,7 +39,6 @@ $white: #ffffff;
   --header-chip-border: rgba(255, 255, 255, 0.18);
   --header-chip-hover: rgba(255, 255, 255, 0.15);
   --header-icon: #ffffff;
-  --footer-space: 4.2rem;
 }
 
 html[data-theme="dark"] {
@@ -112,6 +111,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   color: var(--text-main);
   background:
@@ -120,7 +121,6 @@ body {
   font-family: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   line-height: 1.55;
   min-height: 100vh;
-  padding-bottom: var(--footer-space);
 }
 
 body::-webkit-scrollbar {
@@ -168,7 +168,8 @@ a:focus-visible {
 }
 
 .site-shell {
-  min-height: 100vh;
+  flex: 1 0 auto;
+  min-height: 0;
 }
 
 .site-header {
@@ -338,13 +339,8 @@ main {
 }
 
 .site-footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0.42rem;
-  z-index: 30;
-  padding: 0 0.75rem;
-  pointer-events: none;
+  flex: 0 0 auto;
+  padding: 0 0.75rem 0.6rem;
 }
 
 body > .site-footer .floating-footer {
@@ -363,7 +359,6 @@ body > .site-footer .floating-footer {
   box-shadow: var(--shadow-soft);
   color: var(--header-text);
   backdrop-filter: blur(14px);
-  pointer-events: auto;
   white-space: nowrap;
 }
 
@@ -1300,8 +1295,7 @@ html[data-theme="dark"] .button-secondary {
   }
 
   .site-footer {
-    bottom: 0.24rem;
-    padding: 0 0.4rem;
+    padding: 0 0.4rem 0.4rem;
   }
 
   body > .site-footer .floating-footer {
@@ -1380,10 +1374,6 @@ html[data-theme="dark"] .button-secondary {
 @media (max-width: 440px) {
   .header-contact {
     display: none;
-  }
-
-  :root {
-    --footer-space: 4.2rem;
   }
 }
 

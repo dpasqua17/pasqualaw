@@ -14,13 +14,8 @@
     <link rel="stylesheet" href="/main.css">
     <style>
       .site-footer {
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0.42rem;
-        z-index: 30;
-        padding: 0 0.75rem;
-        pointer-events: none;
+        flex: 0 0 auto;
+        padding: 0 0.75rem 0.6rem;
       }
 
       .site-footer .floating-footer {
@@ -37,7 +32,6 @@
         color: var(--header-text, rgba(255, 255, 255, 0.94));
         box-shadow: var(--shadow-soft, 0 10px 30px rgba(16, 82, 57, 0.06));
         backdrop-filter: blur(14px);
-        pointer-events: auto;
         white-space: nowrap;
       }
 
@@ -78,8 +72,7 @@
 
       @media (max-width: 720px) {
         .site-footer {
-          bottom: 0.24rem;
-          padding: 0 0.4rem;
+          padding: 0 0.4rem 0.4rem;
         }
 
         .site-footer .floating-footer {
