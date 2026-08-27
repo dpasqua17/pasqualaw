@@ -1,8 +1,10 @@
-+++
-title = "Disclaimer"
-description = "Website disclaimer for Meghan Pasqua, LLC."
-updated = 2026-08-27
-+++
+---
+title: "Disclaimer"
+description: "Website disclaimer for Meghan Pasqua, LLC."
+canonical: "https://pasqualaw.com/disclaimer/"
+---
+
+# Disclaimer
 
 The information provided on this website is for general informational purposes only and is not legal advice. You should consult with an attorney regarding your specific circumstances before taking or refraining from any action based on information on this site.
 

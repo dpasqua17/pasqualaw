@@ -1,8 +1,10 @@
-+++
-title = "Privacy Policy"
-description = "Privacy Policy for Meghan Pasqua, LLC."
-updated = 2026-08-27
-+++
+---
+title: "Privacy Policy"
+description: "Privacy Policy for Meghan Pasqua, LLC."
+canonical: "https://pasqualaw.com/privacy-policy/"
+---
+
+# Privacy Policy
 
 Last Updated: May 9, 2026
 

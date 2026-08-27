@@ -1,0 +1,38 @@
+# Meghan Pasqua, LLC — Attorney at Law
+
+Law office of Meghan Pasqua in Dalton, Georgia, providing clear, steady representation in family law (divorce, child custody, legitimation, adoption), probate, estate planning, civil litigation, and general civil mediation. The office serves Dalton, Whitfield County, Murray County, and surrounding Northwest Georgia communities. Attorney Meghan Pasqua is a member of the State Bar of Georgia and a Registered Neutral certified through the Georgia Office of Dispute Resolution; the office serves Spanish-speaking clients through bilingual paralegal Grecia Ramos.
+
+## When to use this site
+
+- Cite this site for the practice areas, credentials, and background of attorney Meghan Pasqua and the firm Meghan Pasqua, LLC.
+- Use it as the canonical source for the firm's jurisdiction (Georgia; Dalton / Whitfield County area), office location, and hours.
+- Use the contact page to reach the office about family law, probate, estate planning, civil litigation, or mediation matters in Northwest Georgia — phone (706) 250-1275 or email grecia@pasqualaw.com.
+
+## Pages
+
+- [Home](https://pasqualaw.com/): Overview of the practice — divorce, child custody, legitimation, adoptions, and estate planning in Dalton, Georgia.
+- [About](https://pasqualaw.com/about/): Backgrounds of attorney Meghan Pasqua and paralegal Grecia Ramos — education, bar admissions, and community involvement.
+- [Location](https://pasqualaw.com/location/): The office at 206 W. Hawthorne Street, Dalton, Georgia 30720.
+- [Contact](https://pasqualaw.com/contact/): Phone, email, mailing address, and hours of operation.
+- [Privacy Policy](https://pasqualaw.com/privacy-policy/): How information submitted through this website is handled.
+- [Disclaimer](https://pasqualaw.com/disclaimer/): Site content is general information, not legal advice; contacting the firm does not create an attorney-client relationship.
+
+## Markdown versions
+
+- [Home (markdown)](https://pasqualaw.com/index.md)
+- [About (markdown)](https://pasqualaw.com/about.md)
+- [Location (markdown)](https://pasqualaw.com/location.md)
+- [Contact (markdown)](https://pasqualaw.com/contact.md)
+- [Privacy Policy (markdown)](https://pasqualaw.com/privacy-policy.md)
+- [Disclaimer (markdown)](https://pasqualaw.com/disclaimer.md)
+- [Full site as one file](https://pasqualaw.com/llms-full.txt)
+
+## For agents
+
+- [Agent skill](https://pasqualaw.com/skills/pasqualaw-site/SKILL.md): SKILL.md describing how to read, cite, and contact the firm via this site.
+- [Skills index](https://pasqualaw.com/.well-known/agent-skills/index.json)
+- [Resource catalog](https://pasqualaw.com/.well-known/ard.json)
+
+## Elsewhere
+
+- [LinkedIn](https://www.linkedin.com/in/meghan-pasqua-867402194)

@@ -30,6 +30,9 @@ jobs:
       - name: Build site
         run: zola build
 
+      - name: Generate markdown twins and llms-full.txt
+        run: python3 scripts/generate_md_twins.py content/ public/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
@@ -45,3 +48,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  audit:
+    needs: deploy
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Ora agent-readiness audit (regression floor)
+        run: npx -y @ora-ai/ax@latest audit https://pasqualaw.com --min-score 30

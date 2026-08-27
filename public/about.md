@@ -1,8 +1,10 @@
-+++
-title = "About"
-description = "Meet attorney Meghan Pasqua and paralegal Grecia Ramos — the team behind a Dalton, Georgia family law practice."
-updated = 2026-08-27
-+++
+---
+title: "About"
+description: "Meet attorney Meghan Pasqua and paralegal Grecia Ramos — the team behind a Dalton, Georgia family law practice."
+canonical: "https://pasqualaw.com/about/"
+---
+
+# About
 
 ## Meghan Pasqua
 
@@ -27,4 +29,4 @@ Grecia obtained her paralegal certificate through the University of Georgia and 
 
 In addition to her professional experience and qualifications, Grecia’s kind and calming presence is an asset to clients, as she helps them navigate the logistics of their case. Grecia approaches every client interaction with care, compassion, and professionalism, taking pride in the work she does to support clients. 
 
-Grecia lives in Dalton with her husband Bryant, their children, and their pets. Outside the office, Grecia enjoys gardening, cooking, and quality time with her family.  
+Grecia lives in Dalton with her husband Bryant, their children, and their pets. Outside the office, Grecia enjoys gardening, cooking, and quality time with her family.

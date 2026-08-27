@@ -1,8 +1,10 @@
-+++
-title = "Contact"
-description = "In person and virtual appointments available to meet your legal needs."
-updated = 2026-08-27
-+++
+---
+title: "Contact"
+description: "In person and virtual appointments available to meet your legal needs."
+canonical: "https://pasqualaw.com/contact/"
+---
+
+# Contact
 
 ## Hours of Operation
 

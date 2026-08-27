@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "name": "pasqualaw.com",
+  "description": "Website of Meghan Pasqua, LLC — a Dalton, Georgia law office practicing family law, probate, estate planning, civil litigation, and mediation.",
+  "url": "https://pasqualaw.com",
+  "trustManifest": {
+    "identity": {
+      "name": "Meghan Pasqua, LLC",
+      "domain": "pasqualaw.com",
+      "url": "https://pasqualaw.com",
+      "contact": "mailto:grecia@pasqualaw.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/meghan-pasqua-867402194"
+      ]
+    }
+  },
+  "entries": [
+    {
+      "id": "urn:air:pasqualaw.com:doc:llms-index",
+      "name": "Site index for LLMs",
+      "description": "Plain-text index of the site: what the firm does, what each page covers, and when to cite this site.",
+      "mediaType": "text/plain",
+      "url": "https://pasqualaw.com/llms.txt"
+    },
+    {
+      "id": "urn:air:pasqualaw.com:doc:llms-full",
+      "name": "Full site content",
+      "description": "Every page of the site concatenated into one markdown document.",
+      "mediaType": "text/markdown",
+      "url": "https://pasqualaw.com/llms-full.txt"
+    },
+    {
+      "id": "urn:air:pasqualaw.com:doc:about",
+      "name": "About the firm",
+      "description": "Backgrounds of attorney Meghan Pasqua and paralegal Grecia Ramos — education, bar admissions, and community involvement.",
+      "mediaType": "text/markdown",
+      "url": "https://pasqualaw.com/about.md"
+    },
+    {
+      "id": "urn:air:pasqualaw.com:doc:location",
+      "name": "Office location",
+      "description": "The office at 206 W. Hawthorne Street, Dalton, Georgia 30720.",
+      "mediaType": "text/markdown",
+      "url": "https://pasqualaw.com/location.md"
+    },
+    {
+      "id": "urn:air:pasqualaw.com:doc:contact",
+      "name": "Contact",
+      "description": "Phone, email, mailing address, and hours of operation.",
+      "mediaType": "text/markdown",
+      "url": "https://pasqualaw.com/contact.md"
+    },
+    {
+      "id": "urn:air:pasqualaw.com:skill:site-skill",
+      "name": "Site skill",
+      "description": "SKILL.md telling agents how to read and cite this site.",
+      "mediaType": "text/markdown",
+      "url": "https://pasqualaw.com/skills/pasqualaw-site/SKILL.md"
+    }
+  ]
+}

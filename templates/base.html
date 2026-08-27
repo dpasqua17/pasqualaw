@@ -6,7 +6,185 @@
     <meta name="theme-color" content="#105239">
     <title>{% if page and page.title %}{{ page.title }} | {{ config.title }}{% elif section and section.title %}{{ section.title }} | {{ config.title }}{% else %}{{ config.title }}{% endif %}</title>
     <meta name="description" content="{% if page and page.description and page.description != '' %}{{ page.description }}{% elif section and section.description %}{{ section.description }}{% else %}{{ config.description }}{% endif %}">
-    <link rel="canonical" href="{% if current_url %}{{ current_url }}{% else %}{{ config.base_url }}{% endif %}">
+    <link rel="canonical" href="{% if current_url %}{{ current_url | safe }}{% else %}{{ config.base_url | safe }}/{% endif %}">
+    <meta property="og:site_name" content="{{ config.title }}">
+    <meta property="og:title" content="{% if page and page.title %}{{ page.title }} | {{ config.title }}{% else %}{{ config.title }}{% endif %}">
+    <meta property="og:type" content="{% if current_path and current_path == '/' %}website{% else %}article{% endif %}">
+    <meta property="og:url" content="{% if current_url %}{{ current_url | safe }}{% else %}{{ config.base_url | safe }}/{% endif %}">
+    <meta property="og:description" content="{% if page and page.description and page.description != '' %}{{ page.description }}{% elif section and section.description %}{{ section.description }}{% else %}{{ config.description }}{% endif %}">
+    <meta property="og:image" content="{{ config.base_url | safe }}/images/meghan-courtroom.jpg">
+    <meta property="og:locale" content="en_US">
+    {%- if page and page.slug %}
+    <link rel="alternate" type="text/markdown" href="{{ config.base_url | safe }}/{{ page.slug }}.md">
+    {%- elif section %}
+    <link rel="alternate" type="text/markdown" href="{{ config.base_url | safe }}/index.md">
+    {%- endif %}
+    {%- if current_path and current_path == "/" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LegalService",
+          "@id": "{{ config.base_url | safe }}/#firm",
+          "name": "Meghan Pasqua, LLC",
+          "alternateName": "{{ config.title }}",
+          "url": "{{ config.base_url | safe }}/",
+          "description": "{{ config.description }}",
+          "image": "{{ config.base_url | safe }}/images/meghan-courtroom.jpg",
+          "logo": "{{ config.base_url | safe }}/images/header-logo-law14.png",
+          "telephone": "+1-706-250-1275",
+          "email": "meghan@pasqualaw.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "206 W. Hawthorne Street",
+            "addressLocality": "Dalton",
+            "addressRegion": "GA",
+            "postalCode": "30720",
+            "addressCountry": "US"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-706-250-1275",
+            "email": "grecia@pasqualaw.com",
+            "contactType": "customer service",
+            "availableLanguage": ["English", "Spanish"]
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+              "opens": "09:00",
+              "closes": "17:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Friday",
+              "opens": "09:00",
+              "closes": "12:00"
+            }
+          ],
+          "areaServed": [
+            { "@type": "City", "name": "Dalton" },
+            { "@type": "AdministrativeArea", "name": "Whitfield County" },
+            { "@type": "AdministrativeArea", "name": "Murray County" },
+            { "@type": "State", "name": "Georgia" }
+          ],
+          "founder": { "@id": "{{ config.base_url | safe }}/#attorney" },
+          "sameAs": [
+            "https://www.linkedin.com/in/meghan-pasqua-867402194"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "{{ config.base_url | safe }}/#attorney",
+          "name": "Meghan Pasqua",
+          "jobTitle": "Attorney at Law",
+          "url": "{{ config.base_url | safe }}/about/",
+          "worksFor": { "@id": "{{ config.base_url | safe }}/#firm" },
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "Georgia State University College of Law" },
+          "memberOf": [
+            { "@type": "Organization", "name": "State Bar of Georgia" },
+            { "@type": "Organization", "name": "Conasauga Bar Association" }
+          ],
+          "knowsAbout": ["Family law", "Divorce", "Child custody", "Legitimation", "Adoption", "Estate planning", "Probate", "Civil litigation", "Mediation"],
+          "sameAs": [
+            "https://www.linkedin.com/in/meghan-pasqua-867402194"
+          ]
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Divorce",
+          "name": "Divorce",
+          "description": "Advocacy through separation, filing, negotiation, and resolution.",
+          "provider": { "@id": "{{ config.base_url | safe }}/#firm" },
+          "areaServed": { "@type": "State", "name": "Georgia" }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Child custody",
+          "name": "Child custody",
+          "description": "Strategic representation focused on practical outcomes prioritizing children's well-being.",
+          "provider": { "@id": "{{ config.base_url | safe }}/#firm" },
+          "areaServed": { "@type": "State", "name": "Georgia" }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Legitimation",
+          "name": "Legitimation",
+          "description": "Support for establishing parental rights and protecting parents' legal standing.",
+          "provider": { "@id": "{{ config.base_url | safe }}/#firm" },
+          "areaServed": { "@type": "State", "name": "Georgia" }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Adoption",
+          "name": "Adoptions",
+          "description": "Legal assistance for families through every step of the adoption process.",
+          "provider": { "@id": "{{ config.base_url | safe }}/#firm" },
+          "areaServed": { "@type": "State", "name": "Georgia" }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Estate planning",
+          "name": "Estate planning",
+          "description": "Thoughtful counsel to help families prepare, protect, and plan for the future.",
+          "provider": { "@id": "{{ config.base_url | safe }}/#firm" },
+          "areaServed": { "@type": "State", "name": "Georgia" }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Mediation",
+          "name": "Mediation",
+          "description": "General civil mediation by a Registered Neutral certified through the Georgia Office of Dispute Resolution.",
+          "provider": { "@id": "{{ config.base_url | safe }}/#firm" },
+          "areaServed": { "@type": "State", "name": "Georgia" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "{{ config.base_url | safe }}/#website",
+          "url": "{{ config.base_url | safe }}/",
+          "name": "{{ config.title }}",
+          "description": "{{ config.description }}",
+          "publisher": { "@id": "{{ config.base_url | safe }}/#firm" },
+          "inLanguage": "en"
+        }
+      ]
+    }
+    </script>
+    {%- elif current_path %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          {%- if current_path == "/about/" %}
+          "@type": ["AboutPage", "ProfilePage"],
+          "mainEntity": { "@id": "{{ config.base_url | safe }}/#attorney" },
+          {%- elif current_path == "/contact/" %}
+          "@type": "ContactPage",
+          {%- else %}
+          "@type": "WebPage",
+          {%- endif %}
+          "@id": "{{ current_url | safe }}",
+          "url": "{{ current_url | safe }}",
+          "name": "{% if page and page.title %}{{ page.title }} | {{ config.title }}{% else %}{{ config.title }}{% endif %}",
+          "description": "{% if page and page.description and page.description != '' %}{{ page.description }}{% else %}{{ config.description }}{% endif %}",
+          "isPartOf": { "@id": "{{ config.base_url | safe }}/#website" },
+          "about": { "@id": "{{ config.base_url | safe }}/#firm" },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ config.base_url | safe }}/" },
+            { "@type": "ListItem", "position": 2, "name": "{% if page and page.title %}{{ page.title }}{% else %}{{ config.title }}{% endif %}", "item": "{{ current_url | safe }}" }
+          ]
+        }
+      ]
+    }
+    </script>
+    {%- endif %}
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48">
     <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">

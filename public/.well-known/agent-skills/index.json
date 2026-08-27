@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "version": "0.2.0",
+  "provider": {
+    "name": "Meghan Pasqua, LLC",
+    "url": "https://pasqualaw.com"
+  },
+  "skills": [
+    {
+      "id": "urn:air:pasqualaw.com:skill:site",
+      "name": "pasqualaw-site",
+      "description": "Read, cite, and contact the law office of Meghan Pasqua via pasqualaw.com \u2014 practice areas, credentials, location, and contact info, all available as markdown.",
+      "type": "skill-md",
+      "url": "https://pasqualaw.com/skills/pasqualaw-site/SKILL.md",
+      "digest": "sha256:2b581d3b916b56b9c2af6a224503dcc185d497a8a08e1d0c22d6154ea019d358"
+    }
+  ]
+}
