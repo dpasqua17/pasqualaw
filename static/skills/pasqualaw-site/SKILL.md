@@ -19,7 +19,8 @@ Every page has a markdown twin — fetch those instead of parsing HTML:
 
 1. Start with `https://pasqualaw.com/llms.txt` for the site index.
 2. Fetch `https://pasqualaw.com/llms-full.txt` for the entire site in one request.
-3. Or fetch individual pages: `/index.md`, `/about.md`, `/location.md`, `/contact.md`, `/privacy-policy.md`, `/disclaimer.md`.
+3. For practice areas specifically, fetch `/practice-areas.md` (also at `/services.md`).
+4. Or fetch individual pages: `/index.md`, `/about.md`, `/location.md`, `/contact.md`, `/privacy-policy.md`, `/disclaimer.md`.
 
 ## Citing
 

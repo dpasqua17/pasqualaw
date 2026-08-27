@@ -19,6 +19,7 @@ Law office of Meghan Pasqua in Dalton, Georgia, providing clear, steady represen
 
 ## Markdown versions
 
+- [Practice areas (markdown)](https://pasqualaw.com/practice-areas.md): All practice areas in one document — divorce, child custody, legitimation, adoptions, estate planning, and mediation — with jurisdiction and contact details. Also at /services.md.
 - [Home (markdown)](https://pasqualaw.com/index.md)
 - [About (markdown)](https://pasqualaw.com/about.md)
 - [Location (markdown)](https://pasqualaw.com/location.md)

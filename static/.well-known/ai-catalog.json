@@ -30,6 +30,13 @@
       "url": "https://pasqualaw.com/llms-full.txt"
     },
     {
+      "id": "urn:air:pasqualaw.com:doc:practice-areas",
+      "name": "Practice areas",
+      "description": "All practice areas in one document — divorce, child custody, legitimation, adoptions, estate planning, and mediation — with jurisdiction and contact details.",
+      "mediaType": "text/markdown",
+      "url": "https://pasqualaw.com/practice-areas.md"
+    },
+    {
       "id": "urn:air:pasqualaw.com:doc:about",
       "name": "About the firm",
       "description": "Backgrounds of attorney Meghan Pasqua and paralegal Grecia Ramos — education, bar admissions, and community involvement.",
